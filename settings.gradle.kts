@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ModbusTester"
 include(":app")
+include(":absensi")
