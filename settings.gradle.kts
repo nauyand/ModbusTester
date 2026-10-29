@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ModbusTester"
+rootProject.name = "Absensi"
 include(":app")
-include(":absensi")

@@ -1,15 +1,10 @@
-# ModbusTester
+# Absensi
 
-Repo ini berisi dua aplikasi Android (Kotlin + Jetpack Compose):
+Aplikasi Android simulasi absensi karyawan dengan foto selfie & GPS (Kotlin + Jetpack Compose).
 
-| Modul | Aplikasi | Package |
-|---|---|---|
-| `app` | **ModbusTester** – penguji perangkat Modbus TCP | `com.teknosolvo.modbustester` |
-| `absensi` | **Absensi** – simulasi absensi karyawan dengan foto & GPS | `com.teknosolvo.absensi` |
+Package `com.teknosolvo.absensi` · AGP 8.7.3 · Kotlin 2.0.21 · Gradle 8.11.1 · minSdk 26 · targetSdk 35.
 
-AGP 8.7.3, Kotlin 2.0.21, Gradle 8.11.1, compileSdk/targetSdk 35.
-
-## Aplikasi Absensi
+## Fitur
 
 Simulasi offline (tanpa server), semua data disimpan di HP.
 
@@ -31,12 +26,11 @@ Data: Room (SQLite) untuk catatan absen, foto di penyimpanan internal aplikasi.
 ## Menjalankan
 
 1. Buka folder repo di Android Studio (Ladybug atau lebih baru), tunggu Gradle sync.
-2. Pilih konfigurasi run **absensi** atau **app** di toolbar, lalu Run ▶.
+2. Run ▶ konfigurasi **app**.
 
 Absensi paling baik dicoba di HP asli (kamera + GPS). Di emulator, set lokasi lewat
 *Extended controls → Location*.
 
 ```bash
-./gradlew :absensi:assembleDebug
-./gradlew :app:assembleDebug
+./gradlew assembleDebug
 ```
